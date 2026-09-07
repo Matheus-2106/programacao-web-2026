@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    border: 0px;
+    padding: 30px;
+}
+
+.cabecalho {
+    margin: auto;
+    border: 3px solid;
+    background-color: rgb(5, 201, 5);
+    color: white;
+    padding: 30px;
+}
+
+.cabecalho h1 {
+    text-align: center;
+    margin: auto;
+    border: 0px;
+    padding: 0px;
+}
+
+.cabecalho p {
+    text-align: center;
+}
+
+.conteudo {
+    border: 3px solid rgb(5, 201, 5);
+    margin: 25px 0px 0px 0px;
+    padding: 25px;
+}
+
+.conteudo h2 {
+    color: rgb(5, 201, 5);
+}
+
+.conteudo p {
+    text-align: justify;
+}
+
+.destaque {
+    color: red;
+    font-weight: bold;
+}
+
+.habilidades span {
+    background-color: rgb(5, 201, 5);
+    border: 1px solid rgb(16, 70, 1);
+    padding: 3px;
+}
+
+.rodape {
+    background-color: rgb(16, 70, 1);
+    text-align: center;
+    font-size: 0.7em;
+    color: white;
+    padding: 30px
+}
