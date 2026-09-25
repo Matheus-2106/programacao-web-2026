@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogos do Mario Clássicos</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <h1 id="titulo-principal">Super Mario - Clássicos</h1>
+        <button id="btn-tema">Mudar para Modo Escuro</button>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main>
+
+        <!-- Seção de Introdução -->
+        <section class="cartao">
+            <h2>Bem-vindo ao Mundo do Mario!</h2>
+            <p>Os jogos do Mario para Nintendinho (NES) e Super Nintendo (SNES) marcaram gerações e definiram o gênero de jogos de plataforma.</p>
+
+            <img src="img/mario.gif" alt="GIF do Mario">
+        </section>
+
+        <!-- Seção NES -->
+        <section class="cartao">
+            <h2>A Era do Nintendinho (8-Bits)</h2>
+            <img src="img/nes.webp" alt="Imagem do NES" class="imagem-destaque">
+            <p>Em meados da década de 1980, a indústria dos videogames tentava se reerguer da grande crise de 1983. Foi nesse cenário que o Nintendo Entertainment System (NES) — carinhosamente conhecido no Brasil como Nintendinho — transformou o entretenimento digital. Em 1985, o lançamento de Super Mario Bros. redefiniu os padrões do gênero de plataforma ao apresentar rolagem lateral fluida, fases dinâmicas, física precisa e uma infinidade de segredos escondidos que incentivavam a exploração.</p>
+            
+            <!-- Botão para mostrar/esconder curiosidades -->
+            <button id="btn-curiosidade" class="btn-secundario">Mostrar Curiosidade 💡</button>
+            
+            <!-- Parágrafo de curiosidade (oculto por padrão) -->
+            <div id="caixa-curiosidade" class="curiosidade-oculta">
+                <p><strong>Curiosidade:</strong> Por limitações de memória no NES, os arbustos e as nuvens do jogo Super Mario Bros. usam exatamente o mesmo desenho (sprite), mudando apenas a cor (verde para arbustos e branco/azul para nuvens)!</p>
+            </div>
+
+            <p>Destaques do NES:</p>
+            <ul class="lista-jogos">
+                <li><strong>Super Mario Bros. (1985):</strong> O marco zero da cultura pop moderna. Apresentou ao mundo o Reino dos Cogumelos (Mushroom Kingdom), o vilão Bowser e o objetivo clássico de resgatar a Princesa Peach. Estabeleceu mecânicas fundamentais como os power-ups (Super Cogumelo e Flor de Fogo).</li>
+                <img src="img/mario_bros.png" alt="Super Mario Bros 1">
+                
+                <li><strong>Super Mario Bros. 2 (1988):</strong> Conhecido por sua jogabilidade atípica no Ocidente (adaptação do jogo Yume Kōjō: Doki Doki Panic). Permitia escolher entre quatro personagens com habilidades únicas — Mario, Luigi, Toad e Princesa Peach — e substituiu a derrota tradicional de inimigos por uma mecânica de arrancar e arremessar objetos do chão.</li>
+                <img src="img/mario_bros2.png" alt="Super Mario Bros 2">
+                
+                <li><strong>Super Mario Bros. 3 (1990):</strong> Considerado uma das maiores obras-primas da era 8-bits. O título introduziu o mapa interativo de mundos (Overworld), minijogos, inventário de itens e transformações memoráveis, como a habilidade de voar com a Super Folha (Super Leaf).</li>
+                <img src="img/mario_bros3.png" alt="Super Mario Bros 3">
+            </ul>
+        </section>
+
+        <!-- Seção SNES -->
+        <section class="cartao">
+            <h2>A Era do Super Nintendo (16-Bits)</h2>
+            <img src="img/snes.jpg" alt="Jogos do SNES" class="imagem-destaque">
+            <p>Com a chegada dos anos 1990, a quarta geração de consoles deu um salto evolutivo inesquecível. O Super Nintendo Entertainment System (SNES) elevou a franquia do encanador a um novo patamar técnico e artístico. Graças ao poder do chip de 16-bits, aos chips auxiliares e às capacidades gráficas avançadas do sistema, os jogos do Mario ganharam paletas de cores vibrantes, sprites incrivelmente detalhados, trilhas sonoras orquestradas em sintetizadores memoráveis e a estreia de um dos companheiros mais amados dos videogames: o carismático dinossauro Yoshi.</p>
+            <p>Destaques do SNES:</p>
+            <ul class="lista-jogos">
+                <li><strong>Super Mario World (1990):</strong> Lançado ao lado do console, tornou-se um dos jogos mais vendidos da história e um clássico absoluto do gênero de plataforma. O título apresentou a Dinosaur Land (Terra dos Dinossauros), um vasto mapa com 96 saídas (exits) e segredos interconectados — como o misterioso Star World. Além de introduzir o Yoshi, que oferecia novas mecânicas de montaria e habilidades ao comer inimigos, o jogo consagrou a Pena (Caped Feather), que permitia ao Mario planar pelos céus.</li>
+                <img src="img/mario_world.jpeg" alt="Super Mario World">
+                
+                <li><strong>Super Mario Kart (1992):</strong> O marco inicial de uma das franquias mais lucrativas e influentes da Nintendo. Utilizando a revolucionária tecnologia Mode 7 do SNES — capaz de simular rotação e escala em planos 2D para criar um efeito de profundidade 3D —, o jogo combinou corridas competitivas com o uso estratégico de itens (como cascos, bananas e raios) e um divertido modo de batalha entre amigos.</li>
+                <img src="img/mario_kart.avif" alt="Super Mario Kart">
+                
+                <li><strong>Super Mario World 2: Yoshi's Island (1995):</strong> Uma obra-prima visual que levou o hardware do SNES ao seu limite prático com o auxílio do chip Super FX2. Adotando um estilo de arte único desenhado à mão (que lembrava giz de cera e lápis de cor), o jogo inovou ao inverter os papéis: o jogador assume o controle de diferentes dinossauros Yoshi em uma missão de escolta para proteger o Bebê Mario e reencontrá-lo com seu irmão Luigi, enfrentando o jovem Bowser e o mago Kamek.</li>
+                <img src="img/mario_world2.jpg" alt="Yoshi's Island">
+            </ul>
+        </section>
+
+        <!-- Seção Interativa: Bloco de Interrogação -->
+        <section class="cartao texto-centralizado">
+            <h2>Bloco de Supresa</h2>
+            <p>Clique na caixa para pegar um item especial do Mario!</p>
+            <div id="bloco-item" class="caixa-mario">?</div>
+            <p id="mensagem-item" class="texto-destaque">O que vai sair da caixa?</p>
+        </section>
+
+        <!-- Seção Interativa: Área do Fã -->
+        <section class="cartao">
+            <h2>Área do Fã</h2>
+            <p>Digite seu nome para receber uma saudação especial:</p>
+
+            <input type="text" id="campo-nome" placeholder="Digite seu nome aqui...">
+
+            <p id="mensagem-saudacao" class="texto-destaque">Esperando seu nome...</p>
+        </section>
+
+        <!-- Seção Interativa: Contador de Curtidas -->
+        <section class="cartao texto-centralizado">
+            <h2>Você gosta dos jogos clássicos?</h2>
+            <p>Deixe sua curtida para o Mario!</p>
+
+            <button id="btn-curtir">Curtir ❤️</button>
+
+            <p>Total de curtidas: <span id="contador-curtidas">0</span></p>
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>Projeto de Programação Web - Jogos do Mario</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

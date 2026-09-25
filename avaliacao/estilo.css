@@ -1,0 +1,203 @@
+/* Configuração geral para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+    color: #333333;
+    line-height: 1.6;
+    /* Adiciona uma transição suave ao alternar as cores do fundo e do texto */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Estilização do cabeçalho */
+header {
+    background-color: #e52521;
+    color: white;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    text-align: center;
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+header h1 {
+    margin: 0 0 15px 0;
+}
+
+/* Estilização das seções (cartões de conteúdo) */
+.cartao {
+    background-color: #ffffff;
+    color: #333333;
+    padding: 25px;
+    margin: 20px auto;
+    max-width: 750px;
+    border-radius: 10px;
+    border: 1px solid #cccccc;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Títulos dos cartões */
+.cartao h2 {
+    text-align: center;
+    color: #e52521;
+    margin-top: 0;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 10px;
+}
+
+/* Justificar textos */
+.cartao p {
+    text-align: justify;
+}
+
+/* Classe auxiliar para textos centralizados */
+.texto-centralizado {
+    text-align: center !important;
+}
+
+.texto-centralizado p {
+    text-align: center;
+}
+
+/* Listas */
+.lista-jogos {
+    padding-left: 20px;
+}
+
+.lista-jogos li {
+    margin-top: 15px;
+    text-align: justify;
+}
+
+/* REGRA DAS IMAGENS: Centralizadas com efeito Hover */
+img, .imagem-destaque {
+    width: 220px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 2px solid #e0e0e0;
+    display: block;
+    margin: 15px auto;
+    /* Animação suave para quando o mouse passar por cima */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Efeito ao passar o mouse sobre a imagem */
+img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilização dos Botões */
+button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* Botão de Tema */
+#btn-tema {
+    background-color: #ffffff;
+    color: #e52521;
+}
+
+#btn-tema:hover {
+    background-color: #f0f0f0;
+}
+
+/* Botão Secundário (Curiosidade) */
+.btn-secundario {
+    background-color: #ff9800;
+}
+
+.btn-secundario:hover {
+    background-color: #e68a00;
+}
+
+/* Caixa de curiosidade escondida por padrão */
+.curiosidade-oculta {
+    display: none;
+    background-color: #fff8e1;
+    color: #333333;
+    padding: 10px 15px;
+    border-left: 4px solid #ff9800;
+    border-radius: 4px;
+    margin: 15px 0;
+}
+
+/* Bloco do Mario (?) */
+.caixa-mario {
+    width: 70px;
+    height: 70px;
+    background-color: #fbc02d;
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px auto;
+    border-radius: 8px;
+    border: 3px solid #f57f17;
+    cursor: pointer;
+    user-select: none;
+    box-shadow: 0 4px 0 #c76a00;
+    transition: transform 0.1s ease;
+}
+
+.caixa-mario:active {
+    transform: translateY(4px);
+    box-shadow: 0 0 0 #c76a00;
+}
+
+/* Campo de Input */
+input {
+    padding: 10px;
+    width: 80%;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Destaque de Texto */
+.texto-destaque {
+    font-weight: bold;
+    color: #007bf5;
+    text-align: center;
+}
+
+/* Rodapé */
+footer {
+    margin-top: 30px;
+    font-size: 13px;
+    color: #777777;
+    text-align: center;
+}
