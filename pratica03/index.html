@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerenciador de Tarefas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Minhas Tarefas</h1>
+
+    <!-- Formulário para cadastro -->
+    <form id="form-tarefa">
+      <div class="campo">
+        <label for="titulo">Título da Tarefa:</label>
+        <input type="text" id="titulo" placeholder="Ex: Estudar JavaScript" required>
+      </div>
+
+      <div class="campo">
+        <label for="prioridade">Prioridade (1 a 5):</label>
+        <input type="number" id="prioridade" min="1" max="5" placeholder="1" required>
+      </div>
+
+      <button type="submit">Adicionar Tarefa</button>
+    </form>
+
+    <!-- Lista onde os registros serão exibidos -->
+    <h2>Lista de Tarefas</h2>
+    <ul id="lista-tarefas"></ul>
+
+    <!-- Botão para apagar os dados -->
+    <button id="btn-limpar" class="btn-danger">Limpar Tudo</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
