@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo Interativo de Produtos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-container">
+      <h1>Catálogo de Produtos</h1>
+      <form id="search-form" class="search-form">
+        <input 
+          type="text" 
+          id="search-input" 
+          placeholder="Pesquisar produtos por nome..." 
+          aria-label="Pesquisar produtos"
+        >
+        <button type="submit">Buscar</button>
+      </form>
+    </div>
+  </header>
+
+  <main class="container main-content">
+    <!-- Feedback de Carregamento e Mensagens de Erro -->
+    <div id="status-message" class="status-message hidden" role="status"></div>
+
+    <!-- Modal para Detalhes do Produto -->
+    <div id="product-modal" class="modal hidden" role="dialog" aria-modal="true">
+      <div class="modal-content">
+        <button class="close-modal" id="close-modal" aria-label="Fechar">&times;</button>
+        <div id="modal-body"></div>
+      </div>
+    </div>
+
+    <!-- Lista de Produtos -->
+    <section class="products-section">
+      <h2>Produtos Disponíveis</h2>
+      <div id="products-grid" class="products-grid"></div>
+    </section>
+
+    <!-- Lista de Favoritos -->
+    <section class="favorites-section">
+      <h2>Meus Favoritos</h2>
+      <div id="favorites-grid" class="products-grid"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 - Trabalho de Programação Web</p>
+  </footer>
+
+  <!-- Carregamento do Script Principal como Módulo -->
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
